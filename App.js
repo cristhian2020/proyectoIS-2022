@@ -12,15 +12,15 @@ const navi = useNavigation();
 const Stack = createNativeStackNavigator() // contien nuestra navegación
 function MyStack(){
   return(
-    <Stack.Navigator>
-      <Stack.Screen name="Primera Pantalla" component={FirstScreen(navi)} options={{headerTintColor: 'white',
+    <Stack.Container>
+      <Stack.Screen name="Primera Pantalla" component={FirstScreen} options={{headerTintColor: 'white',
                                                                               headerStyle:{ backgroundColor: "#0093B7"},headerTitleAlign:'center'}}/>
       <Stack.Screen name="Dosis Del Medicamento" component={QuantityOfMedicationsScreen} options={{headerTintColor: 'white',
                                                                                               headerLeft: null,
                                                                                                headerStyle:{ backgroundColor: "#0093B7"}}}/>
       <Stack.Screen name="Tercera Pantalla" component={ThirdScreen} options={{headerTintColor: 'white',
                                                                                                   headerStyle:{ backgroundColor: "#0093B7"}}}/>
-    </Stack.Navigator>
+    </Stack.Container>
   )
 }
 

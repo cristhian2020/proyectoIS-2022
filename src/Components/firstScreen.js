@@ -1,12 +1,12 @@
 import { Button, View, ScrollView, Text } from "react-native";
 import STYLE_GROUP from "../styles/quantityOfMedicationsStyles"
 
-const FirstScreen = (navi) =>{
+const FirstScreen = ({navigation}) =>{
 
 return(
     <ScrollView style={STYLE_GROUP.containerMain} >
         <Text style={STYLE_GROUP.text}> Primera Pantalla</Text>
-        <Button title="Siguiente pantalla" onPress={() => navi.navigate("Dosis Del Medicamento")}/>
+        <Button title="Siguiente pantalla" onPress={() => navigation.navigate("Dosis Del Medicamento")}/>
     </ScrollView>
     
 );
