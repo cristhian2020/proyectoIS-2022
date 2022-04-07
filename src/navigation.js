@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 //screens
 import HomeScreen from "./screens/screen1";
+import PantallaRegistroMed from "./screens/pantallaRegistroMed";
 import QuantityOfMedicationsScreen from "./screens/quantityOfMedications"
 import StackScreen from "./screens/screen3";
 
@@ -17,6 +18,10 @@ function MyStack() {
             <Stack.Screen
                 name="HomeScreen"
                 component={HomeScreen}
+            />
+            <Stack.Screen
+                name="Registrar medicamento"
+                component={PantallaRegistroMed}
             />
             <Stack.Screen
                 name="Dosis del medicamento"

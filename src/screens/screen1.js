@@ -11,7 +11,7 @@ const HomeScreen = ({navigation}) => {
                     marginTop: "20%"
                 }}>
             <TouchableOpacity
-                    onPress={() => navigation.navigate("Dosis del medicamento")}
+                    onPress={() => navigation.navigate("Registrar medicamento")}
                     style={{
                         backgroundColor: "#FFC300",
                         width: 30,
